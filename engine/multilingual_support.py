@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 
-class MultilingualJarvis:
+class MultilingualBorai:
     def __init__(self):
         # Load saved language or default to English
         try:
@@ -269,4 +269,4 @@ class MultilingualJarvis:
         return text
 
 # Create global instance for backward compatibility
-multilingual = MultilingualJarvis()
+multilingual = MultilingualBorai()

@@ -781,7 +781,7 @@ class NewFeatures:
         except Exception as e:
             return f"Color picker failed: {e}"
     
-    # def text_to_speech_file(self, text="Hello from Jarvis"):
+    # def text_to_speech_file(self, text="Hello from Borai"):
     #     try:
     #         import pyttsx3
     #         engine = pyttsx3.init()
@@ -1087,7 +1087,7 @@ class NewFeatures:
             
             img = qr.make_image(fill_color="#0078FF", back_color="white").convert('RGB')
             
-            filename = f"jarvis_qr_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+            filename = f"Borai_qr_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
             img.save(filename)
             return f"✅ QR Code generated for '{text}': {filename}"
             
@@ -1381,7 +1381,7 @@ class NewFeatures:
         except Exception as e:
             return f"Text to PDF failed: {e}"
     
-    def pdf_encrypt(self, pdf_file=None, password="jarvis123"):
+    def pdf_encrypt(self, pdf_file=None, password="Borai123"):
         try:
             from PyPDF2 import PdfReader, PdfWriter
             if not pdf_file or not os.path.exists(pdf_file):
@@ -1405,7 +1405,7 @@ class NewFeatures:
         except Exception as e:
             return f"PDF encryption failed: {e}"
     
-    def pdf_decrypt(self, pdf_file=None, password="jarvis123"):
+    def pdf_decrypt(self, pdf_file=None, password="Borai123"):
         try:
             from PyPDF2 import PdfReader, PdfWriter
             if not pdf_file or not os.path.exists(pdf_file):
@@ -1479,7 +1479,7 @@ class NewFeatures:
         except Exception as e:
             return f"PDF rotation failed: {e}"
     
-    def pdf_watermark(self, pdf_file=None, watermark_text="JARVIS"):
+    def pdf_watermark(self, pdf_file=None, watermark_text="Borai"):
         try:
             from reportlab.pdfgen import canvas
             from reportlab.lib.pagesizes import letter
@@ -4569,7 +4569,7 @@ Make it comprehensive and logical!'''
                 if message_match:
                     commit_message = message_match.group(1).strip()
                 else:
-                    commit_message = "Auto commit via Jarvis"
+                    commit_message = "Auto commit via Borai"
                 
                 try:
                     # Add all changes

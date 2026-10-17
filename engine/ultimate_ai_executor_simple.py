@@ -16,7 +16,7 @@ import psutil
 class UltimateAIExecutor:
     def __init__(self):
         self.confirmation_required = False
-        self.learning_db = os.path.join(os.path.expanduser('~'), '.jarvis_learning.db')
+        self.learning_db = os.path.join(os.path.expanduser('~'), '.Borai_learning.db')
         self._init_learning_db()
         self.next_move_predictions_enabled = False
         

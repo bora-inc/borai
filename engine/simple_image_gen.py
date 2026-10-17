@@ -10,7 +10,7 @@ def create_simple_image(prompt):
             # Use Pollinations AI (free, no login required)
             url = f"https://image.pollinations.ai/prompt/{prompt.replace(' ', '%20')}"
             
-            print("[Jarvis] Generating image...")
+            print("[Borai] Generating image...")
             
             response = requests.get(url, timeout=30)
             
@@ -21,7 +21,7 @@ def create_simple_image(prompt):
                 with open(filename, "wb") as f:
                     f.write(response.content)
                 
-                print(f"[Jarvis] Image saved as {filename}")
+                print(f"[Borai] Image saved as {filename}")
                 
                 try:
                     from engine.voice_gender_control import voice_control
@@ -29,10 +29,10 @@ def create_simple_image(prompt):
                 except:
                     pass
             else:
-                print("[Jarvis] Image generation failed")
+                print("[Borai] Image generation failed")
                 
         except Exception as e:
-            print(f"[Jarvis] Error: {e}")
+            print(f"[Borai] Error: {e}")
     
     threading.Thread(target=generate, daemon=True).start()
     return "Generating image..."

@@ -1,10 +1,10 @@
 """
-JARVIS AI Assistant - Command Handler Module
+Borai AI Assistant - Command Handler Module
 
 This module handles command processing, parsing, and execution with support for
 natural language understanding, command history, and intelligent routing.
 
-Author: JARVIS AI Team
+Author: Borai AI Team
 Version: 2.0.0
 License: MIT
 """

@@ -1,7 +1,7 @@
-# JARVIS - Complete Dual AI Features Documentation
+# Borai - Complete Dual AI Features Documentation
 
 ## Overview
-This document provides a comprehensive list of all voice commands and features available in the JARVIS Dual AI system, combining both basic system controls and advanced AI capabilities.
+This document provides a comprehensive list of all voice commands and features available in the Borai Dual AI system, combining both basic system controls and advanced AI capabilities.
 
 ---
 
@@ -575,7 +575,7 @@ This document provides a comprehensive list of all voice commands and features a
 - **disable_proactive_mode** - Disable proactive mode
   - Voice: "disable proactive"
 - **manual_learn** - Manual learning
-  - Voice: "manual learn [action]", "teach jarvis"
+  - Voice: "manual learn [action]", "teach Borai"
 - **predictive_assistance** - Predictive assistance
   - Voice: "suggest actions"
 
@@ -710,4 +710,4 @@ This document provides a comprehensive list of all voice commands and features a
 
 ---
 
-*This documentation covers all available features in the JARVIS Dual AI system. For specific setup instructions or troubleshooting, refer to the individual component documentation.*
+*This documentation covers all available features in the Borai Dual AI system. For specific setup instructions or troubleshooting, refer to the individual component documentation.*

@@ -172,7 +172,7 @@ class AdvancedPhoneIntegration:
                 f'$template.SelectSingleNode("//text[@id=1]").InnerText = "📱 SMS from {sender}"; '
                 f'$template.SelectSingleNode("//text[@id=2]").InnerText = "{message[:100]}"; '
                 f'$toast = [Windows.UI.Notifications.ToastNotification]::new($template); '
-                f'[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Jarvis SMS").Show($toast)'
+                f'[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Borai SMS").Show($toast)'
             ], shell=True)
             
             # Speak the SMS (if enabled)
@@ -195,7 +195,7 @@ class AdvancedPhoneIntegration:
                 f'$template.SelectSingleNode("//text[@id=1]").InnerText = "📞 Incoming Call"; '
                 f'$template.SelectSingleNode("//text[@id=2]").InnerText = "From: {caller_number}"; '
                 f'$toast = [Windows.UI.Notifications.ToastNotification]::new($template); '
-                f'[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Jarvis Calls").Show($toast)'
+                f'[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Borai Calls").Show($toast)'
             ], shell=True)
             
             # Announce the call

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-JARVIS Enhanced Face Authentication Setup
+Borai Enhanced Face Authentication Setup
 Complete setup and configuration for face authentication system
 """
 
@@ -142,7 +142,7 @@ def create_config_files():
 
 def run_setup_wizard():
     """Interactive setup wizard"""
-    print("JARVIS Enhanced Face Authentication Setup")
+    print("Borai Enhanced Face Authentication Setup")
     print("=" * 50)
     
     # Step 1: Check dependencies
@@ -180,7 +180,7 @@ def run_setup_wizard():
     print("1. Run 'py engine/auth/test_camera.py' to test your setup")
     print("2. Run 'py engine/auth/sample.py' to register your face")
     print("3. Run 'py engine/auth/trainer.py' to train the model")
-    print("4. Use face authentication in your JARVIS system")
+    print("4. Use face authentication in your Borai system")
     
     return True
 

@@ -1,9 +1,9 @@
-# JARVIS AI Assistant - Project Structure
+# Borai AI Assistant - Project Structure
 
 ## 📁 Complete Project Organization
 
 ```
-jarvis-ai-assistant/
+Borai-ai-assistant/
 ├── 📄 README.md                    # Main project documentation
 ├── 📄 LICENSE                      # MIT License
 ├── 📄 CHANGELOG.md                 # Version history and changes
@@ -81,7 +81,7 @@ jarvis-ai-assistant/
 ### ✅ **Mandatory Files Added**
 
 #### 📄 README.md (Comprehensive)
-- **Project Title**: JARVIS AI Assistant
+- **Project Title**: Borai AI Assistant
 - **Overview**: Complete feature description
 - **Features List**: Detailed capability breakdown
 - **Architecture Diagram**: Mermaid diagrams included
@@ -337,7 +337,7 @@ qrcode==7.4.2
 
 ## 🚀 **Ready for GitHub Success!**
 
-This JARVIS AI Assistant project is now equipped with all the essential components for a successful GitHub repository:
+This Borai AI Assistant project is now equipped with all the essential components for a successful GitHub repository:
 
 ✅ **Professional Documentation**  
 ✅ **Clean, Modular Code**  

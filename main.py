@@ -292,7 +292,7 @@ def start():
     @eel.expose
     def enableAutoStart():
         try:
-            from jarvis_startup import enable_auto_start
+            from Borai_startup import enable_auto_start
             if enable_auto_start():
                 config = get_ui_config()
                 config['auto_start'] = 'enabled'
@@ -305,7 +305,7 @@ def start():
     @eel.expose
     def disableAutoStart():
         try:
-            from jarvis_startup import disable_auto_start
+            from Borai_startup import disable_auto_start
             if disable_auto_start():
                 config = get_ui_config()
                 config['auto_start'] = 'disabled'
@@ -712,7 +712,7 @@ def start():
             success = fingerprint_passed
         else:
             # No authentication enabled
-            speak("No authentication enabled, starting Jarvis")
+            speak("No authentication enabled, starting Borai")
             success = True
         
         if success:

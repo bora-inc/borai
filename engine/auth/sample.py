@@ -11,7 +11,7 @@ try:
     
     detector = cv2.CascadeClassifier('engine\\auth\\haarcascade_frontalface_default.xml')
     
-    print("=== Jarvis Face Training ===")
+    print("=== Borai Face Training ===")
     print("Instructions:")
     print("1. FRONT: Look directly at camera (62 photos)")
     print("2. LEFT: Turn head left (62 photos)")
@@ -98,7 +98,7 @@ try:
             cv2.putText(img, "Press ESC to stop", (10, 110), 
                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
         
-        cv2.imshow('Jarvis Face Training - Look at Camera', img)
+        cv2.imshow('Borai Face Training - Look at Camera', img)
         
         k = cv2.waitKey(100) & 0xff
         if k == 27:  # ESC key

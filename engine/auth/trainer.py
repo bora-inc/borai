@@ -61,7 +61,7 @@ def train_face_model():
             
             return faceSamples, ids
         
-        print("=== Jarvis Face Model Training ===")
+        print("=== Borai Face Model Training ===")
         print("Training faces. This may take a few moments...")
         
         faces, ids = Images_And_Labels(path)
@@ -83,7 +83,7 @@ def train_face_model():
         
         print("\n✅ Training completed successfully!")
         print("Face recognition model saved as trainer.yml")
-        print("You can now use Jarvis face authentication.")
+        print("You can now use Borai face authentication.")
         
         return True
         

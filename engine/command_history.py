@@ -26,13 +26,13 @@ class CommandHistory:
         except Exception as e:
             print(f"Error saving command history: {e}")
     
-    def add_command(self, user_input, jarvis_response, is_voice=False):
+    def add_command(self, user_input, Borai_response, is_voice=False):
         """Add a command to history"""
         try:
             command_entry = {
                 'timestamp': datetime.now().isoformat(),
                 'user_input': user_input,
-                'jarvis_response': jarvis_response,
+                'Borai_response': Borai_response,
                 'input_type': 'voice' if is_voice else 'text'
             }
             
@@ -93,7 +93,7 @@ class CommandHistory:
             base_cmd = cmd['user_input'].strip().lower().split()[0] if cmd['user_input'].strip() else "unknown"
             command_freq[base_cmd] = command_freq.get(base_cmd, 0) + 1
             
-            if cmd['jarvis_response'] and "error" not in cmd['jarvis_response'].lower() and "failed" not in cmd['jarvis_response'].lower():
+            if cmd['Borai_response'] and "error" not in cmd['Borai_response'].lower() and "failed" not in cmd['Borai_response'].lower():
                 successful += 1
         
         # Get top 5 most used commands

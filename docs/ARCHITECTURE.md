@@ -1,8 +1,8 @@
-# JARVIS AI Assistant - Architecture Documentation
+# Borai AI Assistant - Architecture Documentation
 
 ## System Architecture Overview
 
-The JARVIS AI Assistant follows a modular, layered architecture designed for scalability, maintainability, and extensibility.
+The Borai AI Assistant follows a modular, layered architecture designed for scalability, maintainability, and extensibility.
 
 ## Architecture Layers
 

@@ -33,10 +33,10 @@ class VoiceAdvancedAI:
         
         # Advanced features paths
         project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        self.MEMORY_DB = os.path.join(project_dir, "jarvis_memory.db")
-        self.CALENDAR_JSON = os.path.join(project_dir, "jarvis_calendar.json")
-        self.VAULT_DIR = os.path.join(project_dir, "jarvis_vault")
-        self.USAGE_LOG = os.path.join(project_dir, "jarvis_usage.json")
+        self.MEMORY_DB = os.path.join(project_dir, "Borai_memory.db")
+        self.CALENDAR_JSON = os.path.join(project_dir, "Borai_calendar.json")
+        self.VAULT_DIR = os.path.join(project_dir, "Borai_vault")
+        self.USAGE_LOG = os.path.join(project_dir, "Borai_usage.json")
         self._ensure_db()
         
         # ALL VOICE-ACTIVATED ADVANCED FEATURES
@@ -167,7 +167,7 @@ class VoiceAdvancedAI:
             'enable proactive': self.enable_proactive_mode,
             'disable proactive': self.disable_proactive_mode,
             'manual learn': self.manual_learn,
-            'teach jarvis': self.manual_learn,
+            'teach Borai': self.manual_learn,
             'predictive assistance': self.predictive_assistance,
             'suggest actions': self.auto_suggest_with_popup,
             'start proactive background': self.start_proactive_background,
@@ -1408,7 +1408,7 @@ Be specific and accurate about the actual code provided."""
             # Simple encryption using base64 and password
             import base64
             # amazonq-ignore-next-line
-            password = "jarvis_secure_key_2024"  # In real app, use user password
+            password = "Borai_secure_key_2024"  # In real app, use user password
             
             with open(file_path, 'rb') as f:
                 file_data = f.read()
@@ -1759,7 +1759,7 @@ Be specific and accurate about the actual code provided."""
                 ps_command = [
                     'powershell', '-ExecutionPolicy', 'Bypass', '-Command',
                     f'Add-Type -AssemblyName System.Windows.Forms; '
-                    f'[System.Windows.Forms.MessageBox]::Show("{suggestion_text}", "Jarvis Suggestions")'
+                    f'[System.Windows.Forms.MessageBox]::Show("{suggestion_text}", "Borai Suggestions")'
                 ]
                 subprocess.run(ps_command, shell=False, timeout=5)
             except (subprocess.TimeoutExpired, subprocess.SubprocessError, OSError) as e:
@@ -1769,7 +1769,7 @@ Be specific and accurate about the actual code provided."""
     
     def enable_proactive_mode(self):
         self._memory_set('proactive_mode_enabled', True)
-        return "Proactive mode enabled! Jarvis will automatically suggest actions based on your patterns."
+        return "Proactive mode enabled! Borai will automatically suggest actions based on your patterns."
     
     def disable_proactive_mode(self):
         self._memory_set('proactive_mode_enabled', False)
@@ -1804,7 +1804,7 @@ Be specific and accurate about the actual code provided."""
         
         bg_thread = threading.Thread(target=background_suggestions, daemon=True)
         bg_thread.start()
-        return "Proactive Jarvis started in background"
+        return "Proactive Borai started in background"
     
     def manual_learn(self, action: str = ""):
         if not action or not action.strip():
@@ -1983,8 +1983,8 @@ Be specific and accurate about the actual code provided."""
             action = command_lower.replace('manual learn ', '').strip()
             return self.manual_learn(action)
         
-        if command_lower.startswith('teach jarvis '):
-            action = command_lower.replace('teach jarvis ', '').strip()
+        if command_lower.startswith('teach Borai '):
+            action = command_lower.replace('teach Borai ', '').strip()
             return self.manual_learn(action)
         
         # Handle any question about stored information

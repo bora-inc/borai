@@ -3,7 +3,7 @@ import shutil
 import subprocess
 
 def enable_auto_start():
-    """Enable Jarvis auto-start on Windows boot"""
+    """Enable Borai auto-start on Windows boot"""
     try:
         # Get startup folder path
         startup_folder = os.path.join(os.environ['APPDATA'], 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
@@ -14,12 +14,12 @@ cd /d "{os.getcwd()}"
 python run.py'''
         
         # Create batch file
-        batch_path = os.path.join(os.getcwd(), 'jarvis_autostart.bat')
+        batch_path = os.path.join(os.getcwd(), 'Borai_autostart.bat')
         with open(batch_path, 'w') as f:
             f.write(batch_content)
         
         # Copy to startup folder
-        startup_batch = os.path.join(startup_folder, 'jarvis_autostart.bat')
+        startup_batch = os.path.join(startup_folder, 'Borai_autostart.bat')
         shutil.copy2(batch_path, startup_batch)
         
         return True
@@ -28,15 +28,15 @@ python run.py'''
         return False
 
 def disable_auto_start():
-    """Disable Jarvis auto-start"""
+    """Disable Borai auto-start"""
     try:
         startup_folder = os.path.join(os.environ['APPDATA'], 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
-        startup_batch = os.path.join(startup_folder, 'jarvis_autostart.bat')
+        startup_batch = os.path.join(startup_folder, 'Borai_autostart.bat')
         
         if os.path.exists(startup_batch):
             os.remove(startup_batch)
         
-        local_batch = os.path.join(os.getcwd(), 'jarvis_autostart.bat')
+        local_batch = os.path.join(os.getcwd(), 'Borai_autostart.bat')
         if os.path.exists(local_batch):
             os.remove(local_batch)
         
@@ -48,5 +48,5 @@ def disable_auto_start():
 def is_auto_start_enabled():
     """Check if auto-start is enabled"""
     startup_folder = os.path.join(os.environ['APPDATA'], 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
-    startup_batch = os.path.join(startup_folder, 'jarvis_autostart.bat')
+    startup_batch = os.path.join(startup_folder, 'Borai_autostart.bat')
     return os.path.exists(startup_batch)

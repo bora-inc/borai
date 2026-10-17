@@ -1,4 +1,4 @@
-# Jarvis Command Features Documentation
+# Borai Command Features Documentation
 
 ## Core Voice & Text Processing
 
@@ -72,8 +72,8 @@
 ### Listening Management
 - **Pause**: "pause listening"
 - **Resume**: "resume listening"
-- **Mute Jarvis**: "mute jarvis" or "mute voice"
-- **Unmute Jarvis**: "unmute jarvis" or "unmute voice"
+- **Mute Borai**: "mute Borai" or "mute voice"
+- **Unmute Borai**: "unmute Borai" or "unmute voice"
 - **Example**: "pause listening" - Temporarily stops microphone input
 
 ## Task Scheduling
@@ -142,7 +142,7 @@
 ### Configuration Management
 - **Function**: `save_ui_setting(key, value)` - Saves settings to ui_config.json
 - **Function**: `load_ui_settings()` - Loads settings on startup
-- **Settings**: listening_paused, jarvis_muted
+- **Settings**: listening_paused, Borai_muted
 
 ### Error Handling
 - **Graceful Degradation**: Falls back to simpler methods on errors
@@ -177,7 +177,7 @@
 ### Multi-Commands
 ```
 "open notepad and then open calculator"
-"mute jarvis and then pause listening"
+"mute Borai and then pause listening"
 "add contact bob 1234567890 and then call bob"
 ```
 
@@ -195,7 +195,7 @@
 - **engine.command_history**: Command tracking
 
 ### Database Integration
-- **jarvis.db**: SQLite database for contacts
+- **Borai.db**: SQLite database for contacts
 - **Tables**: contacts (name, mobile_no)
 
 ### Configuration Files

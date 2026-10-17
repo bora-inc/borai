@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to JARVIS AI Assistant will be documented in this file.
+All notable changes to Borai AI Assistant will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -40,7 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Gender selection (male/female voices)
   - Speed and volume control
   - Continuous listening mode
-  - Hotword detection ("Hey Jarvis")
+  - Hotword detection ("Hey Borai")
 - **System Monitoring**: Real-time CPU, memory, and system statistics
 - **Command History**: Comprehensive tracking and analytics
 - **Web Interface**: Modern, responsive web-based control panel
@@ -227,7 +227,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Open Source Contributors**: Code contributions and improvements
 
 ### Inspiration
-- **Marvel's JARVIS**: Fictional AI assistant inspiration
+- **Marvel's Borai**: Fictional AI assistant inspiration
 - **Real-world AI Assistants**: Modern AI assistant capabilities
 - **Science Fiction**: Futuristic AI interaction concepts
 
@@ -257,4 +257,4 @@ Each release includes:
 
 ---
 
-For more information about releases, visit our [GitHub Releases](https://github.com/yourusername/jarvis-ai-assistant/releases) page.
+For more information about releases, visit our [GitHub Releases](https://github.com/yourusername/Borai-ai-assistant/releases) page.

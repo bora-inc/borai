@@ -14,7 +14,7 @@ def simple_hotword_detection():
     Less efficient than PvPorcupine but works as fallback
     """
     print("Starting simple hotword detection...")
-    print("Say 'jarvis', 'hey jarvis', or 'alexa' to activate")
+    print("Say 'Borai', 'hey Borai', or 'alexa' to activate")
     print("Press Ctrl+C to stop")
     
     recognizer = sr.Recognizer()
@@ -26,7 +26,7 @@ def simple_hotword_detection():
         recognizer.adjust_for_ambient_noise(source, duration=2)
     print("Ready for hotword detection!")
     
-    hotwords = ["jarvis", "hey jarvis", "alexa", "hey alexa"]
+    hotwords = ["Borai", "hey Borai", "alexa", "hey alexa"]
     
     while True:
         try:
@@ -44,15 +44,15 @@ def simple_hotword_detection():
                     if hotword in text:
                         print(f"Hotword '{hotword}' detected!")
                         
-                        # Activate Jarvis
+                        # Activate Borai
                         try:
                             pyautogui.keyDown("win")
                             pyautogui.press("j")
                             time.sleep(2)
                             pyautogui.keyUp("win")
-                            print("Jarvis activated!")
+                            print("Borai activated!")
                         except Exception as e:
-                            print(f"Error activating Jarvis: {e}")
+                            print(f"Error activating Borai: {e}")
                         
                         # Brief pause after activation
                         time.sleep(3)

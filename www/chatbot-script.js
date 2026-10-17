@@ -880,7 +880,7 @@ class ChatApp {
     
     async toggleVoiceChat() {
         try {
-            // Use JARVIS listening function
+            // Use Borai listening function
             const result = await eel.chatbot_listen()();
             if (result && result.trim()) {
                 // Add user message and send to chatbot

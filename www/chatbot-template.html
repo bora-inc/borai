@@ -127,7 +127,7 @@
                     <button id="attachBtn" class="attach-btn" title="Upload File">
                         <i class="fas fa-paperclip"></i>
                     </button>
-                    <button id="voiceBtn" class="voice-btn" title="Voice Input" onclick="useJarvisVoice()">
+                    <button id="voiceBtn" class="voice-btn" title="Voice Input" onclick="useBoraiVoice()">
                         <i class="fas fa-microphone"></i>
                     </button>
                     <div class="input-container-wrapper">
@@ -208,7 +208,7 @@
             });
         });
         
-        async function useJarvisVoice() {
+        async function useBoraiVoice() {
             const voiceBtn = document.getElementById('voiceBtn');
             
             if (isListening) {
@@ -258,7 +258,7 @@
             
             try {
                 
-                // Call JARVIS voice recognition with timeout
+                // Call Borai voice recognition with timeout
                 const controller = new AbortController();
                 const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
                 
@@ -322,7 +322,7 @@
                 if (error.name === 'AbortError') {
                     document.getElementById('statusText').textContent = 'Voice timeout';
                 } else if (error.message.includes('Failed to fetch')) {
-                    document.getElementById('statusText').textContent = 'JARVIS not running';
+                    document.getElementById('statusText').textContent = 'Borai not running';
                     resetVoiceButton();
                     return;
                 } else {

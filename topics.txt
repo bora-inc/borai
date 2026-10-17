@@ -8,7 +8,7 @@ gemini-ai
 automation
 speech-recognition
 text-to-speech
-jarvis
+Borai
 ai-automation
 smart-assistant
 voice-control

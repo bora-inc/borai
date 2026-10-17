@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo JARVIS AI Assistant - Installation Script
+echo Borai AI Assistant - Installation Script
 echo ========================================
 echo.
 
@@ -85,7 +85,7 @@ echo.
 echo For face authentication setup, run: python setup_face_auth.py
 echo.
 echo ========================================
-echo Installation complete! Ready to run JARVIS.
+echo Installation complete! Ready to run Borai.
 echo ========================================
 
 pause

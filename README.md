@@ -1,4 +1,4 @@
-# 🤖 JARVIS AI Assistant
+# 🤖 Borai AI Assistant
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -26,7 +26,7 @@
 
 ## 🎯 Overview
 
-JARVIS AI Assistant is a sophisticated virtual assistant that combines cutting-edge AI technologies with practical automation features. Built with Python and modern web technologies, it offers voice-controlled interactions, biometric authentication, phone integration, and intelligent task automation.
+Borai AI Assistant is a sophisticated virtual assistant that combines cutting-edge AI technologies with practical automation features. Built with Python and modern web technologies, it offers voice-controlled interactions, biometric authentication, phone integration, and intelligent task automation.
 
 The assistant leverages multiple AI providers (Groq, Google Gemini) for natural language processing and provides a sleek web-based interface for seamless user interaction.
 
@@ -41,7 +41,7 @@ The assistant leverages multiple AI providers (Groq, Google Gemini) for natural 
 - **Speech Recognition**: Real-time voice command processing
 - **Text-to-Speech**: Natural voice responses with gender selection
 - **Multilingual Support**: Multiple language support
-- **Hotword Detection**: Wake word activation ("Hey Jarvis")
+- **Hotword Detection**: Wake word activation ("Hey Borai")
 - **Continuous Listening**: Always-on voice mode
 
 ### 🤖 **AI Integration**
@@ -81,7 +81,7 @@ The assistant leverages multiple AI providers (Groq, Google Gemini) for natural 
 ## 🏗️ Architecture
 
 ```
-JARVIS AI Assistant
+Borai AI Assistant
 ├── Frontend (Web UI)
 │   ├── HTML/CSS/JavaScript
 │   ├── Eel Framework
@@ -174,8 +174,8 @@ graph TB
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Avinashb722/jarvis-ai-assistant.git
-   cd jarvis-ai-assistant
+   git clone https://github.com/Avinashb722/Borai-ai-assistant.git
+   cd Borai-ai-assistant
    ```
 
 2. **Run the automated installer**
@@ -236,7 +236,7 @@ python add_user.py
 ```
 
 ### Voice Commands Examples
-- "Hey Jarvis, what's the weather?"
+- "Hey Borai, what's the weather?"
 - "Open calculator"
 - "Send message to John"
 - "Take a screenshot"
@@ -371,7 +371,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 MIT License
 
-Copyright (c) 2024 JARVIS AI Assistant
+Copyright (c) 2024 Borai AI Assistant
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -404,7 +404,7 @@ copies or substantial portions of the Software.
 - **Contributors**: For code contributions and improvements
 
 ### Inspiration
-Inspired by the fictional JARVIS AI from Marvel's Iron Man series, this project aims to bring advanced AI assistance to everyday computing.
+Inspired by the fictional Borai AI from Marvel's Iron Man series, this project aims to bring advanced AI assistance to everyday computing.
 
 ---
 
@@ -412,12 +412,12 @@ Inspired by the fictional JARVIS AI from Marvel's Iron Man series, this project 
 
 For support, questions, or feature requests:
 
-- **Issues**: [GitHub Issues](https://github.com/Avinashb722/jarvis-ai-assistant/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Avinashb722/jarvis-ai-assistant/discussions)
+- **Issues**: [GitHub Issues](https://github.com/Avinashb722/Borai-ai-assistant/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Avinashb722/Borai-ai-assistant/discussions)
 - **Contact**: Create an issue for support
 
 ---
 
-**Made with ❤️ by the JARVIS AI Team**
+**Made with ❤️ by the Borai AI Team**
 
 *"Sometimes you gotta run before you can walk." - Tony Stark*

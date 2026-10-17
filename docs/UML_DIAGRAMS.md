@@ -1,10 +1,10 @@
-# JARVIS AI Assistant - UML Diagrams
+# Borai AI Assistant - UML Diagrams
 
 ## Class Diagram
 
 ```mermaid
 classDiagram
-    class JarvisMain {
+    class BoraiMain {
         +start()
         +initialize()
         +authenticate()
@@ -56,10 +56,10 @@ classDiagram
         +get_notifications(): list
     }
     
-    JarvisMain --> VoiceProcessor
-    JarvisMain --> AIManager
-    JarvisMain --> AuthenticationManager
-    JarvisMain --> CommandProcessor
+    BoraiMain --> VoiceProcessor
+    BoraiMain --> AIManager
+    BoraiMain --> AuthenticationManager
+    BoraiMain --> CommandProcessor
     CommandProcessor --> SystemController
     CommandProcessor --> PhoneController
 ```
@@ -182,7 +182,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph "JARVIS AI Assistant System"
+    subgraph "Borai AI Assistant System"
         UC1[Voice Commands]
         UC2[System Control]
         UC3[Phone Integration]
@@ -216,7 +216,7 @@ flowchart LR
 
 ```mermaid
 graph TB
-    subgraph "JARVIS Core System"
+    subgraph "Borai Core System"
         subgraph "UI Layer"
             WebUI[Web Interface]
             VoiceUI[Voice Interface]
@@ -273,7 +273,7 @@ graph TB
 ```mermaid
 graph TB
     subgraph "User's Computer"
-        subgraph "JARVIS Application"
+        subgraph "Borai Application"
             MainProcess[Main Process]
             HotwordProcess[Hotword Detection]
             ProactiveProcess[Proactive Service]
@@ -317,7 +317,7 @@ graph TB
 
 ```mermaid
 graph TB
-    subgraph "jarvis"
+    subgraph "Borai"
         subgraph "engine"
             auth[auth]
             features[features]

@@ -1,7 +1,7 @@
 import sqlite3
 
 try:
-    con = sqlite3.connect("jarvis.db")
+    con = sqlite3.connect("Borai.db")
     cursor = con.cursor()
     
     # Get all tables

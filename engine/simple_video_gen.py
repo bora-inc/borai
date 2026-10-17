@@ -7,8 +7,8 @@ def create_simple_video(prompt):
     """Create video using free API service"""
     def generate():
         try:
-            print("[Jarvis] Video generation not available with free APIs")
-            print("[Jarvis] Creating animated GIF instead...")
+            print("[Borai] Video generation not available with free APIs")
+            print("[Borai] Creating animated GIF instead...")
             
             # Use Pollinations for animated GIF (works better)
             url = f"https://image.pollinations.ai/prompt/{prompt.replace(' ', '%20')}?width=512&height=512&seed=42"
@@ -22,7 +22,7 @@ def create_simple_video(prompt):
                 with open(filename, "wb") as f:
                     f.write(response.content)
                 
-                print(f"[Jarvis] Animation saved as {filename}")
+                print(f"[Borai] Animation saved as {filename}")
                 
                 try:
                     from engine.voice_gender_control import voice_control
@@ -30,7 +30,7 @@ def create_simple_video(prompt):
                 except:
                     pass
             else:
-                print("[Jarvis] Animation generation failed")
+                print("[Borai] Animation generation failed")
                 try:
                     from engine.voice_gender_control import voice_control
                     voice_control.speak_with_gender("Video generation not available with free services")
@@ -38,7 +38,7 @@ def create_simple_video(prompt):
                     pass
                 
         except Exception as e:
-            print(f"[Jarvis] Error: {e}")
+            print(f"[Borai] Error: {e}")
             try:
                 from engine.voice_gender_control import voice_control
                 voice_control.speak_with_gender("Video generation failed. Free video APIs are limited.")

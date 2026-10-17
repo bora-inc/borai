@@ -1279,13 +1279,13 @@ class DualAI:
                 except:
                     return "Error with manual learning"
             
-            if query.lower().startswith('teach jarvis '):
-                action = query[14:].strip()  # Remove 'teach jarvis '
+            if query.lower().startswith('teach Borai '):
+                action = query[14:].strip()  # Remove 'teach Borai '
                 try:
                     from engine.voice_advanced_ai import voice_advanced_ai
                     return voice_advanced_ai.manual_learn(action)
                 except:
-                    return "Error teaching Jarvis"
+                    return "Error teaching Borai"
             
 
             
@@ -1961,7 +1961,7 @@ RESPONSE:'''
             'check_proactive': ['check proactive', 'proactive suggestions', 'smart suggestions', 'ai suggestions'],
             'enable_proactive_mode': ['enable proactive', 'turn on suggestions', 'proactive mode on', 'smart mode on'],
             'disable_proactive_mode': ['disable proactive', 'turn off suggestions', 'proactive mode off', 'smart mode off'],
-            'manual_learn': ['manual learn', 'teach jarvis', 'teach you', 'learn this', 'training mode'],
+            'manual_learn': ['manual learn', 'teach Borai', 'teach you', 'learn this', 'training mode'],
             'predictive_assistance': ['predictive help', 'smart suggestions', 'predict actions', 'ai predictions'],
             
             # Advanced Docker & Development
@@ -2127,7 +2127,7 @@ RESPONSE:'''
                 except:
                     pass
             
-            prompt = f'You are Jarvis. Answer briefly: "{query}"'
+            prompt = f'You are Borai. Answer briefly: "{query}"'
             
             if self.ai_provider == 'groq':
                 # Get appropriate model based on token usage
@@ -7790,7 +7790,7 @@ Max 2 lines each.'''
             return f"Image creation error: {str(e)}"
     
     def _explain_capabilities(self):
-        """Explain what Jarvis can do"""
+        """Explain what Borai can do"""
         return "I can control your computer (open apps, manage files, system controls), help with productivity (alarms, reminders, clipboard assistant), browse the web (YouTube, search, websites), create AI images, and answer questions using AI. I support voice commands for hands-free operation and can adapt to your preferences. Just ask me to open something, control media, set alarms, create images, or help with tasks!"
     
     def _set_alarm(self):

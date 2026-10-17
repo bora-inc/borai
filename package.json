@@ -1,5 +1,5 @@
 {
-  "name": "jarvis-ai-assistant",
+  "name": "Borai-ai-assistant",
   "version": "1.0.0",
   "description": "Advanced AI-powered virtual assistant with voice recognition, face authentication, phone integration, and intelligent automation capabilities",
   "keywords": [
@@ -13,20 +13,20 @@
     "automation",
     "speech-recognition",
     "text-to-speech",
-    "jarvis",
+    "Borai",
     "ai-automation",
     "smart-assistant",
     "voice-control",
     "biometric-auth"
   ],
-  "author": "JARVIS AI Team",
+  "author": "Borai AI Team",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Avinashb722/jarvis-ai-assistant.git"
+    "url": "https://github.com/Avinashb722/Borai-ai-assistant.git"
   },
-  "homepage": "https://github.com/Avinashb722/jarvis-ai-assistant#readme",
+  "homepage": "https://github.com/Avinashb722/Borai-ai-assistant#readme",
   "bugs": {
-    "url": "https://github.com/Avinashb722/jarvis-ai-assistant/issues"
+    "url": "https://github.com/Avinashb722/Borai-ai-assistant/issues"
   }
 }

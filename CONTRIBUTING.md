@@ -1,6 +1,6 @@
-# Contributing to JARVIS AI Assistant
+# Contributing to Borai AI Assistant
 
-We love your input! We want to make contributing to JARVIS AI Assistant as easy and transparent as possible, whether it's:
+We love your input! We want to make contributing to Borai AI Assistant as easy and transparent as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code
@@ -27,9 +27,9 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 
 In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## Report bugs using GitHub's [issue tracker](https://github.com/yourusername/jarvis-ai-assistant/issues)
+## Report bugs using GitHub's [issue tracker](https://github.com/yourusername/Borai-ai-assistant/issues)
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/yourusername/jarvis-ai-assistant/issues/new); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/yourusername/Borai-ai-assistant/issues/new); it's that easy!
 
 ## Write bug reports with detail, background, and sample code
 
@@ -55,8 +55,8 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/jarvis-ai-assistant.git
-   cd jarvis-ai-assistant
+   git clone https://github.com/yourusername/Borai-ai-assistant.git
+   cd Borai-ai-assistant
    ```
 
 2. **Create virtual environment**
@@ -356,7 +356,7 @@ Include the following information:
 1. **Environment Details**
    - Operating system and version
    - Python version
-   - JARVIS version
+   - Borai version
    - Hardware specifications
 
 2. **Steps to Reproduce**
@@ -388,7 +388,7 @@ Include the following information:
 
 **DO NOT** create public GitHub issues for security vulnerabilities.
 
-Instead, email security concerns to: security@jarvis-ai.com
+Instead, email security concerns to: security@Borai-ai.com
 
 Include:
 - Description of the vulnerability
@@ -460,4 +460,4 @@ We follow [Semantic Versioning](https://semver.org/):
 
 ---
 
-Thank you for contributing to JARVIS AI Assistant! 🤖✨
+Thank you for contributing to Borai AI Assistant! 🤖✨

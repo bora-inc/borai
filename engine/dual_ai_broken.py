@@ -917,13 +917,13 @@ class DualAI:
                 except:
                     return "Error with manual learning"
             
-            if query.lower().startswith('teach jarvis '):
-                action = query[14:].strip()  # Remove 'teach jarvis '
+            if query.lower().startswith('teach Borai '):
+                action = query[14:].strip()  # Remove 'teach Borai '
                 try:
                     from engine.voice_advanced_ai import voice_advanced_ai
                     return voice_advanced_ai.manual_learn(action)
                 except:
-                    return "Error teaching Jarvis"
+                    return "Error teaching Borai"
             
             # Check new features FIRST before any other processing
             new_feature_result = self._check_new_features(query)
@@ -1473,7 +1473,7 @@ if not func_name:
             'check_proactive': ['check proactive', 'proactive suggestions', 'smart suggestions', 'ai suggestions'],
             'enable_proactive_mode': ['enable proactive', 'turn on suggestions', 'proactive mode on', 'smart mode on'],
             'disable_proactive_mode': ['disable proactive', 'turn off suggestions', 'proactive mode off', 'smart mode off'],
-            'manual_learn': ['manual learn', 'teach jarvis', 'teach you', 'learn this', 'training mode'],
+            'manual_learn': ['manual learn', 'teach Borai', 'teach you', 'learn this', 'training mode'],
             'predictive_assistance': ['predictive help', 'smart suggestions', 'predict actions', 'ai predictions'],
             
             # Advanced Docker & Development
@@ -1568,7 +1568,7 @@ if not func_name:
                 except:
                     pass
             
-            prompt = f'You are Jarvis. Answer briefly: "{query}"'
+            prompt = f'You are Borai. Answer briefly: "{query}"'
             
             if self.ai_provider == 'groq':
                 response = self.groq_client.chat.completions.create(
@@ -2368,7 +2368,7 @@ if not func_name:
                 minutes = int(''.join(filter(str.isdigit, time_str))) or 5
             future_time = datetime.now() + timedelta(minutes=minutes)
             time_format = future_time.strftime("%H:%M")
-            cmd = f'schtasks /create /tn "JarvisReminder" /tr "msg * {message}" /sc once /st {time_format} /f'
+            cmd = f'schtasks /create /tn "BoraiReminder" /tr "msg * {message}" /sc once /st {time_format} /f'
             subprocess.run(cmd, shell=True)
             return f"Reminder set for {minutes} minutes"
         except:

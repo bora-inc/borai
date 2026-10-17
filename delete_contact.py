@@ -1,6 +1,6 @@
 import sqlite3
 
-con = sqlite3.connect("jarvis.db")
+con = sqlite3.connect("Borai.db")
 cursor = con.cursor()
 
 # Show contacts with IDs first

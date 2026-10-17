@@ -41,7 +41,7 @@ $(document).ready(function () {
     });
 
     // mic button click event
-    window.jarvisMicFunction = function() {
+    window.BoraiMicFunction = function() {
         eel.playAssistantSound()
         $("#Oval").attr("hidden", true);
         $("#SiriWave").attr("hidden", false);
@@ -49,7 +49,7 @@ $(document).ready(function () {
     };
 
     $("#MicBtn").click(function () { 
-        window.jarvisMicFunction();
+        window.BoraiMicFunction();
     });
     
     // Face recognition toggle buttons (if you want UI buttons)
@@ -378,7 +378,7 @@ $(document).ready(function () {
     
 
     
-    // Professional JARVIS Interface
+    // Professional Borai Interface
     let systemMetrics = { cpu: 45, ram: 62, memory: 34 };
     let currentUser = 'Sir';
     
@@ -718,7 +718,7 @@ $(document).ready(function () {
                     preview.append(`
                         <div class="chat-message">
                             <div class="message-text">${messageText}</div>
-                            <div class="message-time">${isUser ? 'USER' : 'JARVIS'}</div>
+                            <div class="message-time">${isUser ? 'USER' : 'Borai'}</div>
                         </div>
                     `);
                 }
@@ -739,12 +739,12 @@ $(document).ready(function () {
     // Export chat functionality
     $('#extractChatBtn').click(function() {
         const chatMessages = $('#chat-canvas-body .receiver_message, #chat-canvas-body .sender_message');
-        let chatText = 'JARVIS Chat Export\n\n';
+        let chatText = 'Borai Chat Export\n\n';
         
         chatMessages.each(function() {
             const messageText = $(this).text().trim();
             const isUser = $(this).hasClass('sender_message');
-            const sender = isUser ? 'USER' : 'JARVIS';
+            const sender = isUser ? 'USER' : 'Borai';
             chatText += `${sender}: ${messageText}\n`;
         });
         
@@ -752,7 +752,7 @@ $(document).ready(function () {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'jarvis_chat_export.txt';
+        a.download = 'Borai_chat_export.txt';
         a.click();
         URL.revokeObjectURL(url);
     });

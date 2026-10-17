@@ -608,15 +608,15 @@ task_scheduler = TaskScheduler()
 continuous_active = False
 continuous_listener = None
 listening_paused = False
-jarvis_muted = False
+Borai_muted = False
 
 def speak(text):
-    global jarvis_muted
+    global Borai_muted
     text = str(text)
     
-    # Check if Jarvis is muted
-    if jarvis_muted:
-        print(f"[MUTED] Jarvis: {text}")
+    # Check if Borai is muted
+    if Borai_muted:
+        print(f"[MUTED] Borai: {text}")
         return
     
     # Transform text with personality manager
@@ -646,8 +646,8 @@ def speak(text):
     try:
         if hasattr(command_history, 'history') and command_history.history:
             last_entry = command_history.history[-1]
-            if last_entry.get('jarvis_response') == "Processing...":
-                last_entry['jarvis_response'] = text
+            if last_entry.get('Borai_response') == "Processing...":
+                last_entry['Borai_response'] = text
                 command_history.save_history()
     except Exception as e:
         print(f"History update error: {e}")
@@ -655,7 +655,7 @@ def speak(text):
     try:
         eel.DisplayMessage(text)
     except:
-        print(f"Jarvis: {text}")
+        print(f"Borai: {text}")
     
     # Handle TTS based on language
     try:
@@ -1109,27 +1109,27 @@ def resume_listening():
     except Exception as e:
         return f"Error resuming listening: {str(e)}"
 
-def mute_jarvis():
-    """Mute Jarvis voice"""
-    global jarvis_muted
+def mute_Borai():
+    """Mute Borai voice"""
+    global Borai_muted
     try:
-        jarvis_muted = True
-        save_ui_setting('jarvis_muted', True)
-        print("Jarvis muted")
-        return "Jarvis muted"
+        Borai_muted = True
+        save_ui_setting('Borai_muted', True)
+        print("Borai muted")
+        return "Borai muted"
     except Exception as e:
-        return f"Error muting Jarvis: {str(e)}"
+        return f"Error muting Borai: {str(e)}"
 
-def unmute_jarvis():
-    """Unmute Jarvis voice"""
-    global jarvis_muted
+def unmute_Borai():
+    """Unmute Borai voice"""
+    global Borai_muted
     try:
-        jarvis_muted = False
-        save_ui_setting('jarvis_muted', False)
-        print("Jarvis unmuted")
-        return "Jarvis unmuted"
+        Borai_muted = False
+        save_ui_setting('Borai_muted', False)
+        print("Borai unmuted")
+        return "Borai unmuted"
     except Exception as e:
-        return f"Error unmuting Jarvis: {str(e)}"
+        return f"Error unmuting Borai: {str(e)}"
 
 def save_ui_setting(key, value):
     """Save setting to ui_config.json"""
@@ -1155,34 +1155,34 @@ def save_ui_setting(key, value):
 
 def load_ui_settings():
     """Load settings from ui_config.json"""
-    global listening_paused, jarvis_muted
+    global listening_paused, Borai_muted
     try:
         import json
         with open('ui_config.json', 'r') as f:
             config = json.load(f)
         
         listening_paused = config.get('listening_paused', False)
-        jarvis_muted = config.get('jarvis_muted', False)
+        Borai_muted = config.get('Borai_muted', False)
     except Exception as e:
         print(f"Error loading UI settings: {e}")
         listening_paused = False
-        jarvis_muted = False
+        Borai_muted = False
 
 def process_single_command(query):
     """Process a single command using existing logic"""
-    global jarvis_muted
+    global Borai_muted
     try:
         print(f"Processing single command: '{query}'")
     
     
         
         # Handle unmute command first to bypass mute check
-        if "unmute jarvis" in query or "unmute voice" in query:
+        if "unmute Borai" in query or "unmute voice" in query:
        
-            jarvis_muted = False
-            save_ui_setting('jarvis_muted', False)
-            print("Jarvis unmuted")
-            speak("Jarvis unmuted")
+            Borai_muted = False
+            save_ui_setting('Borai_muted', False)
+            print("Borai unmuted")
+            speak("Borai unmuted")
             try:
                 eel.ShowHood()
             except:
@@ -1357,7 +1357,7 @@ def process_single_command(query):
                     number = match.group(2)
                     
                     # Add to database
-                    con = sqlite3.connect("jarvis.db")
+                    con = sqlite3.connect("Borai.db")
                     cursor = con.cursor()
                     cursor.execute('INSERT INTO contacts (name, mobile_no) VALUES (?, ?)', (name, number))
                     con.commit()
@@ -1384,7 +1384,7 @@ def process_single_command(query):
                 if match:
                     name = match.group(1)
                     
-                    con = sqlite3.connect("jarvis.db")
+                    con = sqlite3.connect("Borai.db")
                     cursor = con.cursor()
                     
                     # Check if contact exists
@@ -1413,7 +1413,7 @@ def process_single_command(query):
             try:
                 import sqlite3
                 
-                con = sqlite3.connect("jarvis.db")
+                con = sqlite3.connect("Borai.db")
                 cursor = con.cursor()
                 cursor.execute('SELECT name, mobile_no FROM contacts')
                 results = cursor.fetchall()
@@ -1599,9 +1599,9 @@ def process_single_command(query):
             eel.ShowHood()
             return
         
-        # Mute/Unmute Jarvis commands
-        elif "mute jarvis" in query or "mute voice" in query:
-            response = mute_jarvis()
+        # Mute/Unmute Borai commands
+        elif "mute Borai" in query or "mute voice" in query:
+            response = mute_Borai()
             # Don't speak when muting
             print(response)
             eel.ShowHood()

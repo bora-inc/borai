@@ -1,8 +1,8 @@
-# JARVIS AI Assistant - API Documentation
+# Borai AI Assistant - API Documentation
 
 ## Overview
 
-This document provides comprehensive API documentation for JARVIS AI Assistant, including all available endpoints, functions, and integration methods.
+This document provides comprehensive API documentation for Borai AI Assistant, including all available endpoints, functions, and integration methods.
 
 ## Table of Contents
 
@@ -22,12 +22,12 @@ This document provides comprehensive API documentation for JARVIS AI Assistant, 
 ### Main Application Interface
 
 #### `start()`
-Initialize and start the JARVIS application.
+Initialize and start the Borai application.
 
 ```python
 def start() -> None:
     """
-    Start the JARVIS AI Assistant application.
+    Start the Borai AI Assistant application.
     
     Initializes all subsystems including:
     - Web interface
@@ -44,7 +44,7 @@ Gracefully shutdown the application.
 ```python
 def shutdown() -> bool:
     """
-    Shutdown JARVIS application gracefully.
+    Shutdown Borai application gracefully.
     
     Returns:
         bool: True if shutdown successful, False otherwise
@@ -498,22 +498,22 @@ eel.getCommandStatistics()((stats) => {
 ### Exception Types
 
 ```python
-class JarvisError(Exception):
-    """Base exception for JARVIS errors."""
+class BoraiError(Exception):
+    """Base exception for Borai errors."""
 
-class AuthenticationError(JarvisError):
+class AuthenticationError(BoraiError):
     """Authentication related errors."""
 
-class VoiceProcessingError(JarvisError):
+class VoiceProcessingError(BoraiError):
     """Voice processing related errors."""
 
-class AIProcessingError(JarvisError):
+class AIProcessingError(BoraiError):
     """AI processing related errors."""
 
-class SystemControlError(JarvisError):
+class SystemControlError(BoraiError):
     """System control related errors."""
 
-class PhoneIntegrationError(JarvisError):
+class PhoneIntegrationError(BoraiError):
     """Phone integration related errors."""
 ```
 
@@ -611,7 +611,7 @@ print(f"Confidence: {advanced_response['confidence']}")
 from engine.phone import send_message, get_contacts
 
 # Send WhatsApp message
-success = send_message("John Doe", "Hello from JARVIS!", "whatsapp")
+success = send_message("John Doe", "Hello from Borai!", "whatsapp")
 if success:
     print("Message sent successfully")
 
@@ -643,7 +643,7 @@ print(f"Disk Usage: {stats['disk_percent']}%")
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JARVIS Control Panel</title>
+    <title>Borai Control Panel</title>
     <script src="/eel.js"></script>
 </head>
 <body>

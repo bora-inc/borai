@@ -11,7 +11,7 @@
       "emotion": "neutral",
       "eye_contact": false,
       "attention_score": 50.0,
-      "jarvis_response": "Hello! I'm watching. How can I help you?"
+      "Borai_response": "Hello! I'm watching. How can I help you?"
     },
     {
       "timestamp": "2025-10-24T09:08:10.192078",
@@ -20,7 +20,7 @@
       "emotion": "neutral",
       "eye_contact": false,
       "attention_score": 10.0,
-      "jarvis_response": "Hello! I'm watching. How can I help you?"
+      "Borai_response": "Hello! I'm watching. How can I help you?"
     },
     {
       "timestamp": "2025-10-24T09:08:20.736002",
@@ -29,7 +29,7 @@
       "emotion": "neutral",
       "eye_contact": true,
       "attention_score": 80.0,
-      "jarvis_response": "Hello! I can see you, you're looking at me. How can I help you?"
+      "Borai_response": "Hello! I can see you, you're looking at me. How can I help you?"
     }
   ],
   "summary": {

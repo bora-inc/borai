@@ -3,7 +3,7 @@ import threading
 from datetime import datetime
 from engine.voice_advanced_ai import voice_advanced_ai
 
-class ProactiveJarvis:
+class ProactiveBorai:
     def __init__(self):
         self.running = False
         self.thread = None
@@ -17,7 +17,7 @@ class ProactiveJarvis:
         self.running = True
         self.thread = threading.Thread(target=self._proactive_loop, daemon=True)
         self.thread.start()
-        print("Proactive Jarvis started! Will suggest actions automatically.")
+        print("Proactive Borai started! Will suggest actions automatically.")
     
     def stop_proactive_mode(self):
         """Stop proactive suggestions"""
@@ -59,26 +59,26 @@ class ProactiveJarvis:
                 time.sleep(60)
 
 # Global instance
-proactive_jarvis = ProactiveJarvis()
+proactive_Borai = ProactiveBorai()
 
-def start_proactive_jarvis():
-    """Start proactive Jarvis"""
-    proactive_jarvis.start_proactive_mode()
+def start_proactive_Borai():
+    """Start proactive Borai"""
+    proactive_Borai.start_proactive_mode()
 
-def stop_proactive_jarvis():
-    """Stop proactive Jarvis"""
-    proactive_jarvis.stop_proactive_mode()
+def stop_proactive_Borai():
+    """Stop proactive Borai"""
+    proactive_Borai.stop_proactive_mode()
 
 if __name__ == "__main__":
-    print("🤖 Starting Proactive Jarvis...")
+    print("🤖 Starting Proactive Borai...")
     print("This will automatically suggest and execute actions based on your patterns.")
     print("Press Ctrl+C to stop.")
     
-    start_proactive_jarvis()
+    start_proactive_Borai()
     
     try:
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
-        print("\n🛑 Stopping Proactive Jarvis...")
-        stop_proactive_jarvis()
+        print("\n🛑 Stopping Proactive Borai...")
+        stop_proactive_Borai()

@@ -30,7 +30,7 @@
 python test_gemini_advanced.py
 ```
 
-### 2. Integration with Your Jarvis:
+### 2. Integration with Your Borai:
 ```python
 from engine.gemini_advanced_vision import (
     start_gemini_advanced,

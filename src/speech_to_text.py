@@ -1,10 +1,10 @@
 """
-JARVIS AI Assistant - Speech to Text Module
+Borai AI Assistant - Speech to Text Module
 
 This module handles speech recognition functionality with multiple engine support,
 noise filtering, and adaptive recognition settings.
 
-Author: JARVIS AI Team
+Author: Borai AI Team
 Version: 2.0.0
 License: MIT
 """

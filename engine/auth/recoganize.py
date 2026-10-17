@@ -129,7 +129,7 @@ def AuthenticateFace():
         light_status = "Dark" if mean_brightness < 80 else "Bright" if mean_brightness > 180 else "Good"
         cv2.putText(frame, f"Light: {light_status}", (10, 60), font, 0.5, (255,255,255), 1)
         
-        cv2.imshow("JARVIS Face Auth", frame)
+        cv2.imshow("Borai Face Auth", frame)
         
         if time.time() - start_time > 30:
             print("Timeout")

@@ -90,9 +90,9 @@ def getSystemStats():
 
 @eel.expose
 def readCalendarEvents():
-    """Read calendar events from jarvis_calendar.json"""
+    """Read calendar events from Borai_calendar.json"""
     try:
-        calendar_path = 'jarvis_calendar.json'
+        calendar_path = 'Borai_calendar.json'
         if os.path.exists(calendar_path):
             with open(calendar_path, 'r') as f:
                 return json.load(f)

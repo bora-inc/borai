@@ -1,5 +1,5 @@
 """
-AI Personality Manager - Controls response style and personality across all Jarvis features
+AI Personality Manager - Controls response style and personality across all Borai features
 """
 
 import json

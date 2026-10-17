@@ -50,7 +50,7 @@ except ImportError as e:
 from engine.helper import extract_yt_term, remove_words
 from hugchat import hugchat
 
-con = sqlite3.connect("jarvis.db")
+con = sqlite3.connect("Borai.db")
 cursor = con.cursor()
 
 @eel.expose
@@ -196,11 +196,11 @@ def hotword():
         
         # Initialize Porcupine with error handling
         try:
-            porcupine = pvporcupine.create(access_key="7FxDn1i0BUibR4eq2c2D97SyurJDHvIEwvnKiH6lK19IFfAD1uStZQ==", keywords=["jarvis", "alexa"])
+            porcupine = pvporcupine.create(access_key="7FxDn1i0BUibR4eq2c2D97SyurJDHvIEwvnKiH6lK19IFfAD1uStZQ==", keywords=["Borai", "alexa"])
             pass
         except Exception as e:
             print(f"Failed to initialize Porcupine: {e}")
-            print("Try using access key: porcupine = pvporcupine.create(access_key='YOUR_ACCESS_KEY', keywords=['jarvis'])")
+            print("Try using access key: porcupine = pvporcupine.create(access_key='YOUR_ACCESS_KEY', keywords=['Borai'])")
             return
         
         # Initialize PyAudio with error handling
@@ -248,10 +248,10 @@ def hotword():
                 
                 # Check if hotword detected
                 if keyword_index >= 0:
-                    detected_word = "jarvis" if keyword_index == 0 else "alexa"
+                    detected_word = "Borai" if keyword_index == 0 else "alexa"
                     print(f"Hotword detected: {detected_word}")
                     
-                    # Trigger Jarvis activation
+                    # Trigger Borai activation
                     if PYAUTOGUI_AVAILABLE:
                         try:
                             import pyautogui as autogui
@@ -260,11 +260,11 @@ def hotword():
                             autogui.press("j")
                             time.sleep(2)
                             autogui.keyUp("win")
-                            print("Jarvis activated")
+                            print("Borai activated")
                         except Exception as e:
-                            print(f"Error activating Jarvis: {e}")
+                            print(f"Error activating Borai: {e}")
                     else:
-                        print("PyAutoGUI not available - please activate Jarvis manually")
+                        print("PyAutoGUI not available - please activate Borai manually")
                     
                     # Brief pause after detection
                     time.sleep(1)
@@ -334,20 +334,20 @@ def whatsApp(mobile_no, message, flag, name, schedule_time=None):
     
     if flag == 'message':
         if schedule_time:
-            jarvis_message = f"message scheduled for {name} at {schedule_time}"
+            Borai_message = f"message scheduled for {name} at {schedule_time}"
         else:
-            jarvis_message = "message send successfully to "+name
+            Borai_message = "message send successfully to "+name
     elif flag == 'call':
         message = ''
-        jarvis_message = "calling to "+name
+        Borai_message = "calling to "+name
     else:
         message = ''
-        jarvis_message = "starting video call with "+name
+        Borai_message = "starting video call with "+name
     
     # If scheduled, set up timer
     if schedule_time and flag == 'message':
         schedule_whatsapp_message(mobile_no, message, name, schedule_time)
-        speak(jarvis_message)
+        speak(Borai_message)
         return
 
     try:
@@ -472,7 +472,7 @@ def whatsApp(mobile_no, message, flag, name, schedule_time=None):
                 time.sleep(4)
                 speak(f"Starting video call with {name} on WhatsApp")
         
-        speak(jarvis_message)
+        speak(Borai_message)
         
     except Exception as e:
         print(f"WhatsApp error: {e}")
@@ -607,11 +607,11 @@ def chatBot(query):
             current_date = datetime.datetime.now().strftime("%B %d, %Y")
             response = f"Today's date is {current_date}"
         elif "hello" in user_input or "hi" in user_input:
-            response = "Hello! I'm Jarvis, your AI assistant. How can I help you today?"
+            response = "Hello! I'm Borai, your AI assistant. How can I help you today?"
         elif "how are you" in user_input:
             response = "I'm doing great! Ready to help you with any tasks or questions."
         elif "what" in user_input and "name" in user_input:
-            response = "I'm Jarvis, your personal AI assistant."
+            response = "I'm Borai, your personal AI assistant."
         else:
             response = "I'm here to help! You can ask me questions or give me commands to control your computer and phone."
         
@@ -856,7 +856,7 @@ def testSMS():
     
     def test_contact(name):
         """Find contact in database"""
-        con = sqlite3.connect("jarvis.db")
+        con = sqlite3.connect("Borai.db")
         cursor = con.cursor()
         
         cursor.execute("SELECT name, mobile_no FROM contacts WHERE LOWER(name) LIKE ?", ('%' + name.lower() + '%',))
@@ -906,7 +906,7 @@ def testSMSDirect():
     
     def test_contact(name):
         """Find contact in database"""
-        con = sqlite3.connect("jarvis.db")
+        con = sqlite3.connect("Borai.db")
         cursor = con.cursor()
         
         cursor.execute("SELECT name, mobile_no FROM contacts WHERE LOWER(name) LIKE ?", ('%' + name.lower() + '%',))

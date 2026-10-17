@@ -14,7 +14,7 @@ from datetime import datetime
 #   3. When asked message, say: 'your message'
 
 #  Method 1: Say 'phone call to akshay' -> choose 'whatsapp'
-def startJarvis():
+def startBorai():
     try:
         from main import start
         start()
@@ -47,13 +47,13 @@ def listenHotword():
             else:
                 break
 
-# Proactive Jarvis background service with popup suggestions
-def runProactiveJarvis():
+# Proactive Borai background service with popup suggestions
+def runProactiveBorai():
     try:
         from engine.dual_ai import get_simple_response
         
         get_simple_response('enable_proactive_mode')
-        print("Proactive Jarvis started in background")
+        print("Proactive Borai started in background")
         
         time.sleep(5)
         
@@ -83,10 +83,10 @@ def runProactiveJarvis():
                                     'powershell', '-Command',
                                     f'[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null; '
                                     f'$template = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02); '
-                                    f'$template.SelectSingleNode("//text[@id=1]").InnerText = "Jarvis Smart Suggestions"; '
+                                    f'$template.SelectSingleNode("//text[@id=1]").InnerText = "Borai Smart Suggestions"; '
                                     f'$template.SelectSingleNode("//text[@id=2]").InnerText = "You usually use: {first_suggestion}"; '
                                     f'$toast = [Windows.UI.Notifications.ToastNotification]::new($template); '
-                                    f'[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Jarvis").Show($toast)'
+                                    f'[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Borai").Show($toast)'
                                 ], shell=True)
                                 
 
@@ -110,11 +110,11 @@ def runProactiveJarvis():
 # Start all processes
 if __name__ == '__main__':
     try:
-        print("Starting JARVIS...")
+        print("Starting Borai...")
         
-        p1 = multiprocessing.Process(target=startJarvis, name="JarvisMain")
+        p1 = multiprocessing.Process(target=startBorai, name="BoraiMain")
         p2 = multiprocessing.Process(target=listenHotword, name="HotwordDetection")
-        p3 = multiprocessing.Process(target=runProactiveJarvis, name="ProactiveJarvis")
+        p3 = multiprocessing.Process(target=runProactiveBorai, name="ProactiveBorai")
         p4 = multiprocessing.Process(target=startChatbot, name="ChatbotServer")
         
         p1.start()
@@ -147,7 +147,7 @@ if __name__ == '__main__':
                 p4.kill()
                 p4.join()
         
-        print("JARVIS stopped")
+        print("Borai stopped")
         
     except KeyboardInterrupt:
         print("\nStopping...")

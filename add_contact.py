@@ -1,8 +1,8 @@
 import sqlite3
 
 def add_contact(name, mobile_no):
-    """Add contact to jarvis.db"""
-    con = sqlite3.connect("jarvis.db")
+    """Add contact to Borai.db"""
+    con = sqlite3.connect("Borai.db")
     cursor = con.cursor()
     
     try:
@@ -16,7 +16,7 @@ def add_contact(name, mobile_no):
 
 def view_contacts():
     """View all contacts"""
-    con = sqlite3.connect("jarvis.db")
+    con = sqlite3.connect("Borai.db")
     cursor = con.cursor()
     
     try:

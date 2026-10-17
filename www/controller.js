@@ -275,11 +275,11 @@ $(document).ready(function () {
                     </div>
                 </div>`;
                 
-                // Jarvis response
-                if (entry.jarvis_response && entry.jarvis_response !== "Processing...") {
+                // Borai response
+                if (entry.Borai_response && entry.Borai_response !== "Processing...") {
                     chatBox.innerHTML += `<div class="row justify-content-start mb-3">
                         <div class="width-size">
-                            <div class="receiver_message">${entry.jarvis_response}</div>
+                            <div class="receiver_message">${entry.Borai_response}</div>
                         </div>
                     </div>`;
                 }

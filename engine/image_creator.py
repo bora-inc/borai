@@ -23,7 +23,7 @@ def create_image_gemini(prompt):
             driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
             driver.get("https://gemini.google.com/")
             
-            print("[Jarvis] Generating image in background...")
+            print("[Borai] Generating image in background...")
             
             # Wait and find text input with multiple attempts
             time.sleep(8)
@@ -95,7 +95,7 @@ def create_image_gemini(prompt):
                                 else:
                                     continue
                             
-                            print(f"[Jarvis] Image saved as {filename}")
+                            print(f"[Borai] Image saved as {filename}")
                             saved = True
                             
                             # Voice feedback
@@ -109,15 +109,15 @@ def create_image_gemini(prompt):
                         continue
                 
                 if not saved:
-                    print("[Jarvis] Could not save generated image - may need login or different approach")
+                    print("[Borai] Could not save generated image - may need login or different approach")
                     
             except Exception as e:
-                print(f"[Jarvis] Image generation failed: {str(e)}")
+                print(f"[Borai] Image generation failed: {str(e)}")
                 
             driver.quit()
             
         except Exception as e:
-            print(f"[Jarvis] Image creator error: {str(e)}")
+            print(f"[Borai] Image creator error: {str(e)}")
             try:
                 from engine.voice_gender_control import voice_control
                 voice_control.speak_with_gender("Image generation failed. Please try again later.")

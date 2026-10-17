@@ -1,4 +1,4 @@
-# JARVIS AI Assistant - Git Ignore File
+# Borai AI Assistant - Git Ignore File
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -130,7 +130,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# JARVIS Specific Files
+# Borai Specific Files
 
 # API Keys and Credentials (CRITICAL - NEVER COMMIT)
 groq_config.py
@@ -154,9 +154,9 @@ face_auth_config.json
 *.db
 *.sqlite
 *.sqlite3
-jarvis.db
-jarvis_memory.db
-jarvis_knowledge.db
+Borai.db
+Borai_memory.db
+Borai_knowledge.db
 command_history.db
 
 # Configuration Files with Sensitive Data
@@ -168,7 +168,7 @@ auth_tokens.json
 # Log Files
 *.log
 logs/
-jarvis.log
+Borai.log
 error.log
 debug.log
 system.log
@@ -266,14 +266,14 @@ engine/auth/trainer/trainer.yml
 memory_state.json
 session_state.json
 app_state.json
-jarvis_long_term_memory.json
+Borai_long_term_memory.json
 adaptive_memory.json
 
 # Usage and Analytics Data
 usage_stats.json
 analytics.json
 command_history.json
-jarvis_usage.json
+Borai_usage.json
 
 # Scheduled Tasks and Automation
 scheduled_tasks.json

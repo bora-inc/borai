@@ -425,14 +425,14 @@ def handle_phone_commands(query):
             # Post multiple high-priority notifications (some ROMs play default sound)
             try:
                 for _ in range(4):
-                    subprocess.run('C:\\platform-tools\\adb.exe shell cmd notification post -t "Find Phone" "jarvis.find" "Phone is here"', shell=True)
+                    subprocess.run('C:\\platform-tools\\adb.exe shell cmd notification post -t "Find Phone" "Borai.find" "Phone is here"', shell=True)
                     time.sleep(0.6)
             except:
                 pass
 
             # Try to play a built-in ringtone file via media viewer
             ringtone_candidates = [
-                'file:///sdcard/Download/jarvis_ring.ogg',
+                'file:///sdcard/Download/Borai_ring.ogg',
                 'file:///system/media/audio/ringtones/Ring_Synth_04.ogg',
                 'file:///system/media/audio/ringtones/Basic_tone.ogg',
                 'file:///system/media/audio/ringtones/Orion.ogg',

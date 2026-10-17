@@ -280,7 +280,7 @@ class PhoneNotificationMonitor:
                     f'$template.SelectSingleNode("//text[@id=1]").InnerText = "📱 {app}"; '
                     f'$template.SelectSingleNode("//text[@id=2]").InnerText = "{title} - {text}"; '
                     f'$toast = [Windows.UI.Notifications.ToastNotification]::new($template); '
-                    f'[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Jarvis Phone").Show($toast)'
+                    f'[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Borai Phone").Show($toast)'
                 ], shell=True, timeout=3)
             except Exception as toast_error:
                 print(f"Toast error: {toast_error}")

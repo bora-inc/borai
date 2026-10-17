@@ -1748,7 +1748,7 @@ class GeminiAdvancedVision:
         """Save long-term memory to persistent storage"""
         try:
             import json
-            with open('jarvis_long_term_memory.json', 'w') as f:
+            with open('Borai_long_term_memory.json', 'w') as f:
                 json.dump(self.long_term_memory, f, indent=2)
         except Exception as e:
             print(f"Memory save error: {e}")

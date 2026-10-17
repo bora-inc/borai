@@ -1,10 +1,10 @@
 """
-JARVIS AI Assistant - Text to Speech Module
+Borai AI Assistant - Text to Speech Module
 
 This module handles text-to-speech functionality with multiple engine support,
 voice customization, and advanced speech synthesis features.
 
-Author: JARVIS AI Team
+Author: Borai AI Team
 Version: 2.0.0
 License: MIT
 """
@@ -604,7 +604,7 @@ if __name__ == "__main__":
     
     # Test basic speech
     print("Testing basic speech...")
-    tts.speak("Hello, this is JARVIS AI Assistant. Testing text to speech functionality.")
+    tts.speak("Hello, this is Borai AI Assistant. Testing text to speech functionality.")
     
     # Wait for speech to complete
     time.sleep(3)

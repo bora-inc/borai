@@ -1,4 +1,4 @@
-# JARVIS - Complete Voice Command Documentation
+# Borai - Complete Voice Command Documentation
 
 ## File: dual_ai.py
 
@@ -300,7 +300,7 @@
   - Voice: "font viewer", "preview fonts"
   - Features: Purpose-based fonts, Google Fonts, system fonts
 - **ascii_art_generator** - Text to ASCII art
-  - Voice: "ascii art HELLO", "ascii generator JARVIS"
+  - Voice: "ascii art HELLO", "ascii generator Borai"
   - Features: Character-based visual art, custom text conversion
 - **barcode_generator** - Barcode creation and analysis
   - Voice: "barcode 123456789", "generate barcode MyProduct"
@@ -346,7 +346,7 @@
 - **adaptive_learning** - Learns user patterns
   - Voice: "adaptive learning", "learn from me"
 - **manual_learn** - Manual learning
-  - Voice: "manual learn [action]", "teach jarvis"
+  - Voice: "manual learn [action]", "teach Borai"
 - **predictive_assistance** - Predictive suggestions
   - Voice: "predictive assistance", "suggest actions"
 
@@ -401,10 +401,10 @@
   - Voice: "pause listening"
 - **resume_listening** - Resumes microphone
   - Voice: "resume listening"
-- **mute_jarvis** - Mutes Jarvis voice
-  - Voice: "mute jarvis", "mute voice"
-- **unmute_jarvis** - Unmutes Jarvis voice
-  - Voice: "unmute jarvis", "unmute voice"
+- **mute_Borai** - Mutes Borai voice
+  - Voice: "mute Borai", "mute voice"
+- **unmute_Borai** - Unmutes Borai voice
+  - Voice: "unmute Borai", "unmute voice"
 
 ### Command History
 - **execute_previous_command** - Executes last command
@@ -627,7 +627,7 @@
 ### Multiple Commands
 - **Chain Commands** - Execute multiple commands
   - Voice: "open calculator and then take screenshot"
-  - Voice: "mute jarvis, open notepad, then unmute jarvis"
+  - Voice: "mute Borai, open notepad, then unmute Borai"
 
 ### Dynamic Commands
 - **Contextual Understanding** - Smart command interpretation
@@ -640,7 +640,7 @@
 
 ### Basic Usage
 ```
-"Hey Jarvis, open calculator"
+"Hey Borai, open calculator"
 "Take a screenshot"
 "What's the weather like?"
 "Set a reminder to call mom in 30 minutes"
@@ -703,8 +703,8 @@
 - `gemini_config.py` - Gemini API configuration
 
 ### Data Storage
-- `jarvis.db` - Contact database
-- `jarvis_memory.db` - Memory storage
+- `Borai.db` - Contact database
+- `Borai_memory.db` - Memory storage
 - `health_data.json` - Health tracking data
 - `reminders.json` - Task reminders
 - `flashcards.json` - Study flashcards
@@ -716,7 +716,7 @@
 
 ---
 
-This documentation covers all voice commands and features available in JARVIS. Each feature can be activated using natural language voice commands as shown in the examples above.
+This documentation covers all voice commands and features available in Borai. Each feature can be activated using natural language voice commands as shown in the examples above.
 
 ---
 
@@ -771,7 +771,7 @@ This documentation covers all voice commands and features available in JARVIS. E
 
 ## Summary
 
-This documentation covers **ALL** JARVIS features across multiple files:
+This documentation covers **ALL** Borai features across multiple files:
 - **features.py** - Core system functions and phone integration
 - **dual_ai.py** - File operations and AI responses  
 - **voice_advanced_ai.py** - Advanced AI capabilities

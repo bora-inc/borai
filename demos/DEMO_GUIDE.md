@@ -1,8 +1,8 @@
-# JARVIS AI Assistant - Demo Guide
+# Borai AI Assistant - Demo Guide
 
 ## 🎬 Demo Overview
 
-This guide provides comprehensive demonstrations of JARVIS AI Assistant's capabilities, including screenshots, video demos, and step-by-step usage examples.
+This guide provides comprehensive demonstrations of Borai AI Assistant's capabilities, including screenshots, video demos, and step-by-step usage examples.
 
 ## 📸 Screenshots Gallery
 
@@ -16,7 +16,7 @@ This guide provides comprehensive demonstrations of JARVIS AI Assistant's capabi
 
 ### Settings Management
 ![Settings](../ui/settings.png)
-*Comprehensive settings panel for customizing JARVIS behavior*
+*Comprehensive settings panel for customizing Borai behavior*
 
 ### System Initialization
 ![Initializing](../ui/Initializsing.png)
@@ -59,44 +59,44 @@ This guide provides comprehensive demonstrations of JARVIS AI Assistant's capabi
 
 ### 1. Voice Command Demo
 ```
-User: "Hey Jarvis, open calculator"
-JARVIS: "Opening calculator application"
+User: "Hey Borai, open calculator"
+Borai: "Opening calculator application"
 [Calculator opens]
 
 User: "What's 25 times 37?"
-JARVIS: "25 times 37 equals 925"
+Borai: "25 times 37 equals 925"
 
 User: "Take a screenshot"
-JARVIS: "Screenshot captured and saved to desktop"
+Borai: "Screenshot captured and saved to desktop"
 ```
 
 ### 2. Phone Integration Demo
 ```
 User: "Send message to John"
-JARVIS: "What message would you like to send to John?"
+Borai: "What message would you like to send to John?"
 User: "Hey, are we still meeting at 3 PM?"
-JARVIS: "Message sent to John via WhatsApp"
+Borai: "Message sent to John via WhatsApp"
 
 User: "Read my messages"
-JARVIS: "You have 2 new messages. From Sarah: 'Don't forget about dinner tonight'"
+Borai: "You have 2 new messages. From Sarah: 'Don't forget about dinner tonight'"
 ```
 
 ### 3. AI Conversation Demo
 ```
 User: "What's the weather like today?"
-JARVIS: "Today's weather is partly cloudy with a high of 75°F and low of 58°F. There's a 20% chance of rain this afternoon."
+Borai: "Today's weather is partly cloudy with a high of 75°F and low of 58°F. There's a 20% chance of rain this afternoon."
 
 User: "Should I take an umbrella?"
-JARVIS: "With only a 20% chance of rain, an umbrella isn't necessary, but you might want to keep one handy just in case."
+Borai: "With only a 20% chance of rain, an umbrella isn't necessary, but you might want to keep one handy just in case."
 ```
 
 ### 4. System Control Demo
 ```
 User: "Show system status"
-JARVIS: "System Status: CPU usage 15%, Memory usage 45%, Disk space 78% available. All systems running normally."
+Borai: "System Status: CPU usage 15%, Memory usage 45%, Disk space 78% available. All systems running normally."
 
 User: "Open file explorer and navigate to documents"
-JARVIS: "Opening File Explorer and navigating to Documents folder"
+Borai: "Opening File Explorer and navigating to Documents folder"
 [File Explorer opens to Documents]
 ```
 
@@ -120,7 +120,7 @@ JARVIS: "Opening File Explorer and navigating to Documents folder"
    - Multiple language support
    - Noise filtering and adaptation
    - Continuous listening mode
-   - Hotword detection ("Hey Jarvis")
+   - Hotword detection ("Hey Borai")
 
 2. **Text-to-Speech**
    - Male/female voice selection
@@ -190,7 +190,7 @@ JARVIS: "Opening File Explorer and navigating to Documents folder"
 ## 🎮 Interactive Testing
 
 ### Voice Command Testing
-1. Start JARVIS with `python run.py`
+1. Start Borai with `python run.py`
 2. Wait for "Ready for commands" message
 3. Try these commands:
    - "Open notepad"
@@ -264,7 +264,7 @@ python -c "from engine.phone import *; test_phone_connection()"
 
 ### Scenario 1: Morning Routine
 ```
-1. JARVIS starts with system boot
+1. Borai starts with system boot
 2. Face authentication on first interaction
 3. "Good morning! What's my schedule today?"
 4. "Check the weather"
@@ -295,22 +295,22 @@ python -c "from engine.phone import *; test_phone_connection()"
 ### For Live Demonstrations
 
 #### Introduction (30 seconds)
-"Welcome to JARVIS AI Assistant - an advanced virtual assistant inspired by Tony Stark's AI. Let me show you its capabilities."
+"Welcome to Borai AI Assistant - an advanced virtual assistant inspired by Tony Stark's AI. Let me show you its capabilities."
 
 #### Authentication Demo (1 minute)
-"First, let's see the biometric security. JARVIS uses both face recognition and fingerprint authentication for secure access."
+"First, let's see the biometric security. Borai uses both face recognition and fingerprint authentication for secure access."
 
 #### Voice Commands (2 minutes)
-"Now let's try some voice commands. JARVIS can control your computer, manage applications, and answer questions naturally."
+"Now let's try some voice commands. Borai can control your computer, manage applications, and answer questions naturally."
 
 #### AI Integration (1 minute)
-"JARVIS uses multiple AI providers for intelligent responses. Watch how it handles complex queries and maintains context."
+"Borai uses multiple AI providers for intelligent responses. Watch how it handles complex queries and maintains context."
 
 #### Phone Integration (1 minute)
-"One unique feature is phone integration. JARVIS can send messages, make calls, and manage your mobile device remotely."
+"One unique feature is phone integration. Borai can send messages, make calls, and manage your mobile device remotely."
 
 #### Conclusion (30 seconds)
-"JARVIS brings science fiction to reality - a truly intelligent assistant for modern computing."
+"Borai brings science fiction to reality - a truly intelligent assistant for modern computing."
 
 ## 🎬 Recording Guidelines
 
@@ -348,4 +348,4 @@ python -c "from engine.phone import *; test_phone_connection()"
 
 ---
 
-**Ready to experience the future of AI assistance? Try JARVIS today!**
+**Ready to experience the future of AI assistance? Try Borai today!**

@@ -1,7 +1,7 @@
-# Jarvis New Features Documentation
+# Borai New Features Documentation
 
 ## Overview
-The `new_features.py` file contains 89 advanced features that extend Jarvis's capabilities without modifying the core dual_ai.py file. These features are organized into categories and support natural language commands.
+The `new_features.py` file contains 89 advanced features that extend Borai's capabilities without modifying the core dual_ai.py file. These features are organized into categories and support natural language commands.
 
 ## How to Use Features
 
@@ -362,7 +362,7 @@ task_reminder("meeting at 3pm")
 
 **ASCII Art Generator**: Create text art
 - Example: `get_new_feature_response("ascii art HELLO")`
-- Example: `get_new_feature_response("ascii generator JARVIS")`
+- Example: `get_new_feature_response("ascii generator Borai")`
 - Example: `get_new_feature_response("text art WELCOME")`
 
 **Barcode Generator**: Create barcodes
